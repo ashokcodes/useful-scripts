@@ -27,3 +27,21 @@ SHOW VARIABLES LIKE "max_connections";
 SET GLOBAL innodb_buffer_pool_size=11811160064; 
 SELECT @@innodb_buffer_pool_size/1024/1024/1024
 ```
+
+
+# Setting OPEN FILES LIMIT
+`cd /lib/systemd/system`
+
+`sudo vi mysql.service` -- this could be  mysqld.service on centos
+
+In the file add 
+```
+LimitNOFILE=infinity
+LimitMEMLOCK=infinity
+```
+
+Set value via MySQL CLI
+```
+SHOW VARIABLES LIKE 'open_files_limit';
+SET GLOBAL open_files_limit = 5000000; 
+```
