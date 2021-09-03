@@ -13,6 +13,11 @@ df -h
 du -sh /home
 ```
 
+# Truncate File
+```
+truncate -s 0 ./filename
+```
+
 
 # Grep Stuff
 
@@ -20,3 +25,5 @@ du -sh /home
 ```
 find . -type f -size +50M
 ```
+
+
