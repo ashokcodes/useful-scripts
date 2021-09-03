@@ -12,3 +12,11 @@ df -h
 ```
 du -sh /home
 ```
+
+
+# Grep Stuff
+
+## Search for files above 50M
+```
+find . -type f -size +50M
+```
