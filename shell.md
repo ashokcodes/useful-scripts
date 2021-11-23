@@ -27,3 +27,12 @@ find . -type f -size +50M
 ```
 
 
+# Making a node executable
+Add `#!/usr/bin/env node` to the top of file
+
+```
+mkdir ~/bin
+cp script ~/bin
+export PATH=$PATH:~/bin
+source ~/.bashrc
+```
