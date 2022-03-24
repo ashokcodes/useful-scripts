@@ -1,0 +1,13 @@
+## SSH
+login with ssh user `openvpnas`
+
+Once SSH is logged in, `openvpnas` users root password has to be changed
+### Setting login password 
+`su passwd openvpn`
+
+## Accessing openvpn for cert file
+Open the server ip in browser
+
+## Accessing openvpn admin paentl
+Open the server ip along with `/admin` in the browser
+Use creds `openvpn` and the password that was set as password
